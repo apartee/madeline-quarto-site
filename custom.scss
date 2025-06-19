@@ -49,7 +49,7 @@ h1, h2, h3 {
 // Hero Banner Styles
 main .hero-banner {
     position: relative;
-    background-image: url("/images/banner.jpg");
+    background-image: url("images/banner.jpg");
     background-size: cover;
     background-position: center;
     min-height: 400px; // Changed from 60vh to min-height
