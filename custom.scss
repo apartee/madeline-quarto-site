@@ -396,6 +396,52 @@ a:focus, button:focus {
     }
 }
 
+// Benefits grid styling
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 1.5rem;
+    
+    h3 {
+        color: $primary;
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        
+        i {
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+    }
+    
+    p {
+        font-size: 0.95rem;
+        color: #6c757d;
+    }
+}
+
+// Update services grid to handle 4 cards
+.services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+// Mobile adjustments
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .benefit-item {
+        padding: 1rem;
+    }
+}
+
 // Alternative: Make navbar dark with light text
 // Uncomment if you prefer a dark navbar instead
 /*
